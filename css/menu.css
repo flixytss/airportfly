@@ -1,0 +1,139 @@
+body{
+    margin: 25px;
+    background-color: rgb(128, 128, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Panel1 {
+    width: 1800px;
+    height: 100px;
+    background-color: rgb(100, 100, 200);
+    float: left;
+    border-radius: 25px;
+}
+#panel-text{
+    color: rgb(255, 228, 193);
+    margin: 25px;
+}
+#panel-text2{
+    color: rgb(255, 228, 193);
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    top: 165px;
+    left: 40px;
+}
+#panel-text2-mouseenter{
+    color: rgb(255, 200, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    top: 165px;
+    left: 40px;
+}
+#button-panel-text{
+    width: 300px;
+    height: 100px;
+    color: rgb(255, 228, 193);
+    margin: 25px;
+}
+#id-button-flys{
+    width: 350px;
+    height: 100px;
+    background-color: rgb(100, 100, 200);
+    transform: translateX(200px);
+    animation: id-button-flys 0s 1 forwards;
+    border-radius: 25px;
+}
+@keyframes id-button-flys{
+    to{transform: translateY(125px);}
+}
+#information-panel{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(100, 100, 200);
+    border-radius: 25px;
+
+    position: absolute;
+    left: 400px;
+    top: 135px;
+
+    animation: information-panel-anim-Enter 0.5s 1 forwards;
+}
+@keyframes information-panel-anim-Enter{
+    from{
+        width: 0px;
+        height: 0px;
+        background-color: rgb(100, 100, 200);
+        border-radius: 25px;
+
+        position: absolute;
+        left: 300px;
+        top: 35px;
+    }
+    to{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(100, 100, 200);
+        border-radius: 25px;
+
+        position: absolute;
+        left: 400px;
+        top: 135px;
+    }
+}
+@keyframes information-panel-anim-Exit{
+    from{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(100, 100, 200);
+        border-radius: 25px;
+
+        position: absolute;
+        left: 400px;
+        top: 135px;
+    }
+    to{
+        width: 0px;
+        height: 0px;
+        background-color: rgb(100, 100, 200);
+        border-radius: 25px;
+
+        position: absolute;
+        left: 300px;
+        top: 35px;
+    }
+}
+#None{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 25px;
+
+    position: absolute;
+    left: 400px;
+    top: 135px;
+
+    animation: information-panel-anim-Exit 0.5s 1 forwards;
+}
+#Lorem{
+    color: black;
+    animation: information-text-anim-Enter 1s 1 forwards;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Lorem-{
+    color: rgb(128, 128, 255);
+    position: absolute;
+    top: 1000000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes information-text-anim-Enter{
+    from{
+        background-color: rgb(128, 128, 255);
+        position: absolute;
+        top: 1000000px;
+    }
+    to{
+        background-color: rgb(100, 100, 200);
+        border-radius: 25px;
+    }
+}

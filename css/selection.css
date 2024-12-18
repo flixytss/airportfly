@@ -1,0 +1,83 @@
+#button-information-div{
+    width: 200px;
+    height: 80px;
+    border-radius: 25px;
+    background-color: rgb(128, 128, 255);
+
+    position: absolute;
+    top: 30px;
+    left: 885px;
+}
+#Information-anim-on-enter{
+    animation: Information-anim-on-enter 0.5s 1 forwards;
+}
+#Information-anim-off-exit{
+    animation: Information-anim-off-exit 0.5s 1 forwards;
+}
+@keyframes Information-anim-on-enter{
+    from{
+        position: absolute;
+        top: 50px;
+        left: 980px;
+        width: 0px;
+        height: 0px;
+        background-color: rgb(100, 100, 100);
+        border-radius: 0px 0px 10px 10px;
+    }
+    to{
+        position: absolute;
+        top: 120px;
+        left: 890px;
+        width: 190px;
+        height: 100px;
+        background-color: rgb(100, 100, 100);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@keyframes Information-anim-off-exit{
+    from{
+        position: absolute;
+        top: 120px;
+        left: 890px;
+        width: 190px;
+        height: 100px;
+        background-color: rgb(100, 100, 100);
+        border-radius: 0px 0px 10px 10px;
+    }
+    to{
+        position: absolute;
+        top: 60px;
+        left: 980px;
+        width: 0px;
+        height: 0px;
+        background-color: rgb(100, 100, 100);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+#button1{
+    animation: button1 0.5s 1 forwards;
+}
+@keyframes button1{
+    from{
+        font-size: 0px;
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        border: transparent;
+        position: absolute;
+    }
+    to{
+        font-size: 25px;
+        width: 190px;
+        height: 50px;
+        background-color: gray;
+        border-color: transparent;
+        position: absolute;
+        transform: translateY(25px);
+        border: transparent;
+    }
+}
+#off{
+    position: absolute;
+    top: 1000000px;
+}
